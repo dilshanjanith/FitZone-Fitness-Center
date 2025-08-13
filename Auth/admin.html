@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Admin | FitZone</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">Admin Dashboard</div>
+      <button id="toggle-mode" class="toggle-btn">🌗</button>
+    </header>
+
+    <div class="content">
+      <h2>Customer Inquiries</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Message</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dynamic rows from backend (Node.js later) -->
+          <tr>
+            <td>John Doe</td>
+            <td>john@example.com</td>
+            <td>Interested in yoga sessions</td>
+            <td>Pending</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
