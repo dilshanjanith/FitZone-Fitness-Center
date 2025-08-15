@@ -42,6 +42,17 @@ main {
   top: 0;
   z-index: 1000;
   width: 100%;
+  height: 80px;
+}
+
+.social-login i {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.social-login i:hover {
+  transform: scale(1.2);
+  color: #007bff;
 }
 
 .logo {
@@ -132,7 +143,137 @@ footer {
   background-color: #e63939;
 }
 
+body.signup-page {
+  font-family: Arial, sans-serif;
+  background-color: #d9e0e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0; /* prevent scrollbars */
+}
+
+/* Sign up container */
+.signup-container {
+  body {
+  font-family: Arial, sans-serif;
+  background-color: #d9e0e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+  display: flex;
+  width: 900px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+/* ===== Left Side Image ===== */
+.signup-image {
+  flex: 1;
+}
+
+.signup-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== Right Side Form ===== */
+.signup-form {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signup-form h2 {
+  margin-bottom: 1rem;
+  font-size: 1.9rem;
+  text-align: center;
+  font-weight: 900;
+}
+
+/* ===== Social Login Icons ===== */
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+/* Divider */
+.divider {
+  text-align: center;
+  margin: 1rem 0;
+  color: #494949;
+}
+
+/* ===== Input Fields ===== */
+.name-fields {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/* ===== Button ===== */
+.signup-form button {
+  margin-left: 338px !important;
+  width: 115px;
+  padding: 0.8rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.signup-form button:hover {
+  background-color: #333;
+}
+
+/* ===== Footer Link ===== */
+.login-link {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.login-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
 /* Forms */
+.form-container-login {
+  max-width: 800px;
+  height: 550px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
 .form-container {
   max-width: 400px;
   margin: 2rem auto;
@@ -146,27 +287,27 @@ footer {
   background-color: #2a2a2a;
 } */
 
-.form-container h2 {
+.form-container, .form-container-login h2 {
   margin-bottom: 1rem;
   text-align: center;
 }
 
-.form-container form {
+.form-container, .form-container-login form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.form-container input,
-.form-container button,
-.form-container textarea {
+.form-container, .form-container-login input,
+.form-container, .form-container-login button,
+.form-container, .form-container-login textarea {
   padding: 0.75rem;
   font-size: 1rem;
   border-radius: 5px;
   border: 1px solid #ccc;
 }
 
-.form-container button {
+.form-container, .form-container-login button {
   background-color: #007bff;
   color: white;
   cursor: pointer;
@@ -174,7 +315,7 @@ footer {
   transition: background 0.3s;
 }
 
-.form-container button:hover {
+.form-container, .form-container-login button:hover {
   background-color: #0056b3;
 }
 
