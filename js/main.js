@@ -1,4 +1,5 @@
 const toggleBtn = document.getElementById("toggle-mode");
+const loginBtn = document.getElementById("login-btn");
 
 // Apply saved theme on page load
 window.addEventListener("DOMContentLoaded", () => {
@@ -9,11 +10,22 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 // Toggle dark mode and save preference
-toggleBtn.addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode");
-  const isDark = document.body.classList.contains("dark-mode");
-  localStorage.setItem("theme", isDark ? "dark" : "light");
-});
+if (toggleBtn) {
+  toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    const isDark = document.body.classList.contains("dark-mode");
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+  });
+}
+
+// Handle login button click
+if (loginBtn) {
+  loginBtn.addEventListener("click", (event) => {
+    event.preventDefault(); // stop the form from reloading page
+    // Here you could also add login validation logic
+    window.location.href = "index.html"; // redirect
+  });
+}
 
 // Active nav highlight on scroll
 const sections = document.querySelectorAll("section");

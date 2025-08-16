@@ -261,6 +261,20 @@ body.signup-page {
 .login-link a:hover {
   text-decoration: underline;
 }
+.signup-link {
+  text-align: center;
+  padding-top: 100px;
+  margin-top: 1rem;
+}
+
+.signup-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
 
 /* Forms */
 .form-container-login {
