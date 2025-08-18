@@ -8,14 +8,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <script src="js/main.js" defer></script>
+    <script src="js/signup.js" defer></script>
   </head>
   <body class="signup-page">
     <div class="signup-container">
       <!-- Left side image -->
-      <div class="signup-image">
-        <img src="assets/fitness.jpg" alt="Fitness Image" />
-      </div>
+    <div class="signup-image">
+      <img src="assets/fitness.webp" alt="Fitness Image" />
+    </div>
 
       <!-- Right side form -->
       <div class="signup-form">
@@ -29,14 +29,28 @@
 
         <p class="divider"><span>------------</span> or sign up with <span>------------</span></p>
 
-        <form>
-          <div class="name-fields">
-            <input type="text" placeholder="First Name" />
-            <input type="text" placeholder="Last Name" />
+        <form id="signup-form" novalidate>
+          <div class="field-wrapper">
+            <input type="text" id="first-name" placeholder="First Name" />
+            <label class="error" id="first-name-error"></label>
           </div>
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
-          <button type="submit">Sign up</button>
+
+          <div class="field-wrapper">
+            <input type="text" id="last-name" placeholder="Last Name" />
+            <label class="error" id="last-name-error"></label>
+          </div>
+
+          <div class="field-wrapper">
+            <input type="email" id="email" placeholder="Email" />
+            <label class="error" id="email-error"></label>
+          </div>
+
+          <div class="field-wrapper">
+            <input type="password" id="password" placeholder="Password" />
+            <label class="error" id="password-error"></label>
+          </div>
+
+          <button type="submit">Sign Up</button>
         </form>
 
         <p class="login-link">
