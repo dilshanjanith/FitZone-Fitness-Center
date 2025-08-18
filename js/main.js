@@ -1,5 +1,11 @@
 const toggleBtn = document.getElementById("toggle-mode");
 const loginBtn = document.getElementById("login-btn");
+const adminLoginBtn = document.getElementById("admin-login-btn");
+
+const loginError = document.getElementById("login-error");
+
+const adminEmail = "admin12345@gmail.com";
+const adminPass = "Admin2001@#";
 
 // Apply saved theme on page load
 window.addEventListener("DOMContentLoaded", () => {
@@ -26,6 +32,30 @@ if (loginBtn) {
     window.location.href = "index.html"; // redirect
   });
 }
+if (adminLoginBtn) {
+  adminLoginBtn.addEventListener("click", (event) => {
+    event.preventDefault(); // prevent form submission
+
+    const enteredEmail = document.getElementById("admin-email").value.trim();
+    const enteredPass = document.getElementById("admin-password").value;
+
+    if (enteredEmail === adminEmail && enteredPass === adminPass) {
+      // Success → redirect
+      window.location.href = "admin.html";
+    } else {
+      // Fail → show error
+      loginError.textContent = "Unknown Admin User. Try again!";
+      loginError.style.display = "block";
+    }
+  });
+}
+
+document.getElementById("admin-email").addEventListener("input", () => {
+  loginError.style.display = "none";
+});
+document.getElementById("admin-password").addEventListener("input", () => {
+  loginError.style.display = "none";
+});
 
 // Active nav highlight on scroll
 const sections = document.querySelectorAll("section");

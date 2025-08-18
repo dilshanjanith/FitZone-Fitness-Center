@@ -4,27 +4,44 @@
     <meta charset="UTF-8" />
     <title>Login | FitZone</title>
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/main.js" defer></script>
+    <script src="js/login.js" defer></script>
   </head>
   <body class="signup-page">
     <div class="signup-container">
       <!-- Left side image -->
       <div class="signup-image">
-        <img src="assets/logingimg.jpg" alt="Fitness Image" />
+        <img src="assets/logingimg.webp" alt="Fitness Image" />
       </div>
 
       <!-- Right side form -->
       <div class="signup-form">
-        <h2>Sign in to </br> FitZone</h2>
+        <h2>Sign in to <br />FitZone</h2>
 
         <div class="social-login">
           <i class="fa-brands fa-google fa-2x"></i>
           <i class="fa-brands fa-facebook fa-2x"></i>
           <i class="fa-brands fa-apple fa-2x"></i>
         </div>
-        <form>
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
+
+        <p class="divider">
+          <span>------------</span> or login with <span>------------</span>
+        </p>
+
+        <form id="login-form" novalidate>
+          <div class="field-wrapper">
+            <input type="email" id="login-email" placeholder="Email" />
+            <label class="error" id="login-email-error"></label>
+          </div>
+
+          <div class="field-wrapper">
+            <input type="password" id="login-password" placeholder="Password" />
+            <label class="error" id="login-password-error"></label>
+          </div>
+
+          <div class="field-wrapper">
+            <label class="error" id="login-error"></label>
+          </div>
+
           <button id="login-btn" type="submit">Login</button>
         </form>
 
@@ -34,15 +51,4 @@
       </div>
     </div>
   </body>
-  <!-- <body>
-    <div class="form-container-login">
-      <h2>Login</h2>
-      <form>
-        <input type="email" placeholder="Email" required />
-        <input type="password" placeholder="Password" required />
-        <button type="submit">Login</button>
-      </form>
-      <p></p>
-    </div>
-  </body> -->
 </html>
