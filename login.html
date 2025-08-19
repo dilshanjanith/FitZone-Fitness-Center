@@ -17,24 +17,24 @@
       <div class="signup-form">
         <h2>Sign in to <br />FitZone</h2>
 
-        <div class="social-login">
-          <i class="fa-brands fa-google fa-2x"></i>
-          <i class="fa-brands fa-facebook fa-2x"></i>
-          <i class="fa-brands fa-apple fa-2x"></i>
-        </div>
-
-        <p class="divider">
-          <span>------------</span> or login with <span>------------</span>
-        </p>
-
-        <form id="login-form" novalidate>
+        <form id="login-form" novalidate autocomplete="off">
           <div class="field-wrapper">
-            <input type="email" id="login-email" placeholder="Email" />
+            <input
+              type="email"
+              id="login-email"
+              placeholder="Email"
+              autocomplete="off"
+            />
             <label class="error" id="login-email-error"></label>
           </div>
 
           <div class="field-wrapper">
-            <input type="password" id="login-password" placeholder="Password" />
+            <input
+              type="password"
+              id="login-password"
+              placeholder="Password"
+              autocomplete="off"
+            />
             <label class="error" id="login-password-error"></label>
           </div>
 

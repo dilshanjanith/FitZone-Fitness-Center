@@ -315,10 +315,6 @@ body.signup-page {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* body.dark-mode .form-container {
-  background-color: #2a2a2a;
-} */
-
 .form-container,
 .form-container-login h2 {
   margin-bottom: 1rem;
@@ -473,20 +469,6 @@ body.dark-mode .content {
   font-weight: bold;
 }
 
-/* .toast {
-      position: fixed;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: #28a745;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-weight: bold;
-      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-      z-index: 1000;
-    } */
-
 .toast.error {
   background-color: #f44336; /* red for error */
 }
@@ -546,12 +528,6 @@ label.error {
   margin-bottom: 1rem;
 }
 
-.cta-buttons {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
 .cta {
   padding: 0.8rem 1.5rem;
   background-color: black;
@@ -564,4 +540,590 @@ label.error {
 
 .cta:hover {
   background-color: #333;
+}
+
+/* Home section  */
+#home {
+  background: url("assets/heroBg.jpg") no-repeat center top/cover;
+  height: 100vh; /* Full screen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* text color for contrast */
+  text-align: center;
+  position: relative;
+}
+
+#home .content-wrapper {
+  width: 100%;
+  margin-top: 40px;
+  max-width: 100%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+#home .hero-subtitle {
+  width: 30%;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: -100px;
+  background: #555a63;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+#home .hero-title {
+  text-align: left;
+  font-size: 6rem;
+  color: #000000;
+  font-weight: 900;
+  line-height: 1;
+  margin: 0px 301px 16px 40px;
+  padding: 10px;
+  display: inline-block;
+}
+
+#home .hero-desc {
+  text-align: left;
+  margin-left: 50px;
+  width: 40%;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+#home .hero-promo {
+  text-align: left;
+  margin-left: 50px;
+  font-size: 0.5rem;
+  color: #ff0000;
+  font-weight: 500;
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+#home .cta-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+#home .cta-btn {
+  background: #000;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#home .cta-btn:hover {
+  background: #333;
+}
+
+/* Optional: Add dark overlay for better text visibility */
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2); /* semi-transparent overlay */
+  z-index: 1;
+}
+
+/* About section  */
+#about {
+  background: url("assets/servicesBg.jpg") no-repeat center top/cover;
+  height: 100vh; /* Full screen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* text color for contrast */
+  text-align: center;
+  position: relative;
+}
+
+#about .content-wrapper {
+  width: 100%;
+  margin-top: 40px;
+  max-width: 100%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+#about .about-title {
+  margin-top: -15px;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1;
+  padding: 10px;
+  display: inline-block;
+}
+
+#about .hero-subtitle {
+  width: 30%;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: -75px;
+  margin-left: -100px;
+  background: #555a63;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+#about .about-desc {
+  color: #ffffff;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.1;
+  padding: 10px;
+  display: inline-block;
+}
+
+/* Optional: Add dark overlay for better text visibility */
+#about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* semi-transparent overlay */
+  z-index: 1;
+}
+
+#about .content-wrapper {
+  position: relative;
+  z-index: 2; /* bring text above overlay */
+}
+/* programs section  */
+#programs {
+  background: url("assets/programBg.jpg") no-repeat center top/cover;
+  height: 100vh; /* Full screen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* text color for contrast */
+  text-align: center;
+  position: relative;
+}
+
+#programs .content-wrapper {
+  width: 100%;
+  max-width: 100%;
+  margin-left: 70px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#programs .programs-wrapper {
+  width: 100%;
+  color: #ffff;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: -5rem;
+}
+
+#programs .program-card {
+  background: #01ffb3;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
+}
+
+#programs .program-card h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+#programs .program-card p {
+  font-size: 1rem;
+  color: #000000;
+  margin-bottom: 1.5rem;
+}
+
+#programs .program-card .price {
+  display: inline-block;
+  font-size: italic;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #ff4d4d;
+  padding: 6px 12px;
+}
+
+#programs .program-card .enrollBtn {
+  margin-left: 150px !important;
+  display: inline-block;
+  color: #ffffff;
+  font-weight: bold;
+  background: #ff4d4d;
+  width: 100px;
+  height: 40px;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#programs .program-card .enrollBtn:hover {
+  background: #ffeaea;
+  color: rgb(0, 0, 0);
+}
+#programs .program-card .enBtn {
+  display: inline-block;
+  color: #ff4d4d;
+  background: #ffeaea;
+  border-radius: 8px;
+  margin-left: 338px !important;
+  padding: 0.8rem;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#programs .program-card:hover {
+  transform: translateY(-8px);
+  background: rgb(155, 231, 231);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+#programs .program-subtitle {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ff4d4d;
+  margin-bottom: 10px;
+}
+
+#programs .about-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+#programs::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* semi-transparent overlay */
+  z-index: 1;
+}
+
+#programs .content-wrapper {
+  position: relative;
+  z-index: 2; /* bring text above overlay */
+}
+/* counseling section  */
+#counseling {
+  background: url("assets/cornicingBg.jpg") no-repeat center center/cover;
+  height: 100vh; /* Full screen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* text color for contrast */
+  text-align: center;
+  position: relative;
+}
+
+#counseling .content-wrapper {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 1rem;
+  height: 400px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#counseling .content-wrapper h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-top: -4rem;
+  margin-bottom: 1rem;
+}
+
+#counseling .content-wrapper p {
+  font-size: 1.3rem;
+}
+
+#counseling .counseling-wrapper {
+  display: grid;
+  height: 900px;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 1rem; /* spacing between cards */
+  margin-top: 2rem;
+}
+
+#counseling .counseling-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* keep natural order */
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #fff;
+  height: 100%; /* makes all cards equal height if used in grid */
+}
+
+#counseling .counseling-card h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+#counseling .counseling-card p {
+  font-size: 1rem;
+  color: #000000;
+  margin-bottom: 1.5rem;
+}
+
+#counseling .counseling-card .price {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #ff4d4d;
+  padding: 6px 12px;
+}
+
+#counseling .counseling-card button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #ff5722;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#counseling .counseling-card button:hover {
+  background: #e64a19;
+}
+
+#counseling .counseling-card:hover {
+  transform: translateY(-8px);
+  background: rgb(200, 189, 235);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Optional: Add dark overlay for better text visibility */
+#counseling::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* semi-transparent overlay */
+  z-index: 1;
+}
+
+#counseling .content-wrapper {
+  position: relative;
+  z-index: 2; /* bring text above overlay */
+}
+
+/* Inquiry Section */
+#inquiry {
+  background: url("assets/inquiresBg.jpg") no-repeat center top/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 100%;
+  color: white;
+  position: relative;
+  padding: 0 0 20px 0;
+}
+
+/* Inquiry Container */
+#inquiry .inquiry-container {
+  width: 50%;
+  height: 100%;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: auto;
+}
+
+/* Form Styles */
+#inquiry .inquiry-form h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+  text-align: left;
+}
+
+#inquiry .inquiry-form .form-label {
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+#inquiry .inquiry-form label.error {
+  color: red;
+  font-size: 13px;
+  margin-top: 4px;
+  height: 14px;
+}
+
+#inquiry .name-row {
+  display: flex;
+  gap: 15px; /* space between fields */
+}
+
+#inquiry .name-row .field-wrapper {
+  flex: 1; /* each input takes equal width */
+  display: flex;
+  flex-direction: column;
+}
+
+.field-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.field-wrapper input,
+.field-wrapper textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.field-wrapper input:focus,
+.field-wrapper textarea:focus {
+  border-color: #ff5722;
+  box-shadow: 0 0 5px rgba(255, 87, 34, 0.5);
+}
+
+.field-wrapper textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+#submit-btn {
+  padding: 12px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#submit-btn:hover {
+  background-color: #e64a19;
+}
+
+#blogs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px 20px;
+  background: #f0f0f0; /* optional section bg */
+}
+
+/* Each Blog Card */
+#blogs .blog-container {
+  display: flex;
+  height: 50vh; /* split 50% viewport height */
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Image */
+#blogs .blog-image {
+  flex: 1;
+  overflow: hidden;
+}
+
+#blogs .blog-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+#blogs .blog-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Right Content */
+#blogs .blog-content {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#blogs .blog-content h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#blogs .blog-content p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+#blogs .blog-date {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+#blogs .read-more {
+  text-decoration: none;
+  font-weight: 600;
+  color: #ff5722;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+#blogs .read-more:hover {
+  color: #e64a19;
 }

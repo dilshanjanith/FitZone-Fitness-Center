@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FitZone | Home</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/pages.css" />
     <script src="js/main.js" defer></script>
   </head>
   <body>
@@ -21,27 +22,31 @@
           <li><a href="#blogs">Blogs</a></li>
         </ul>
       </nav>
-      <button id="toggle-mode" class="toggle-btn">🌗</button>
     </header>
 
     <div>
       <!-- Home Section -->
       <section class="content" id="home">
         <div class="content-wrapper">
-          <h4>FitZone Fitness Center</h4>
-          <h1>
+          <h4 class="hero-subtitle">FitZone Fitness Center</h4>
+
+          <h1 class="hero-title">
             TRAIN YOURSELF <br />
             TO BE PERFECT
           </h1>
-          <p>
-            A manager at a Philadelphia-area Planet Fitness allegedly refused to
-            allow good Samaritans to use the gym's defibrillator on a man who
+          <h6 class="hero-desc">
+            A manager at a Philadelphia-area Planet Fitness allegedly refused to </br>
+            allow good Samaritans to use the gym's defibrillator on a man who </br>
             suffered a heart attack outside, a lawsuit says.
+          </h6>
+
+          <p class="hero-promo">
+            <strong>Join today and get 50% off for All Programs</strong>
           </p>
-          <p><strong>Join today and get 50% off for All Programs</strong></p>
+
           <div class="cta-buttons">
-            <a href="signup.html" class="cta">Join Now</a>
-            <a href="login.html" class="cta">Log In</a>
+            <a href="signup.html" class="cta-btn">Join Now</a>
+            <a href="login.html" class="cta-btn">Log In</a>
           </div>
         </div>
       </section>
@@ -50,57 +55,277 @@
     <div>
       <!-- About Section -->
       <section class="content" id="about">
-        <h2>About FitZone</h2>
-        <p>
-          FitZone is your ultimate destination for physical wellness, mental
-          clarity, and community support.
-        </p>
+        <div class="content-wrapper">
+          <h4 class="hero-subtitle">FitZone Fitness Center</h4>
+          <h2 class="about-title">
+           OUR STORY
+          </h2>
+          <h6 class="about-desc">
+            At FitZone Fitness Center, we’re more than just a gym we’re a lifestyle hub built around </br> 
+            strength, self-growth, and community. Our mission is to empower individuals to become the </br>
+            best version of themselves  physically, mentally, and emotionally.
+            </br></br>
+            FitZone is where transformation begins. Whether you're just starting your fitness journey </br>
+             or pushing toward new personal bests, our space is designed to motivate, challenge, and </br>
+              support you every step of the way.
+            </br></br>
+
+          We believe that fitness isn't just about lifting weights or burning calories it's about </br>
+          building confidence, resilience, and balance in every aspect of your life. </br>
+          Our passionate trainers, state-of-the-art equipment, and supportive environment come together to </br>
+            create a space where goals are not only set they’re achieved.
+            </br></br>
+
+
+          The FitZone community is at the heart of everything we do. Your dedication, energy, and </br>
+          progress inspire us daily. We're here to celebrate your wins, guide your growth, and keep </br> 
+          you moving forward stronger, together.
+          </br></br>
+
+          Welcome to FitZone where your limits are just the beginning.
+        </h6>
+        </div>
       </section>
     </div>
 
     <div>
       <!-- Programs Section -->
-      <section class="content" id="programs">
-        <h2>Programs</h2>
-        <p>
-          Explore our fitness classes, personal training, and online programs
-          tailored to every level.
-        </p>
+      <section class="programs" id="programs">
+        <div class="content-wrapper">
+          <div class="programs-wrapper">
+
+            <div class="program-card">
+              <h3>Beginner Muscle Builder</h3>
+              <p>
+                Perfect for newcomers focusing on basic lifts, proper form, and steady progress.
+              </p>
+              <span class="price">$35</span>
+              <button class="enrollBtn">Enroll</button>
+            </div>
+
+            <div class="program-card">
+              <h3>Hypertrophy Program</h3>
+              <p>
+                High-volume training designed to maximize muscle size through controlled reps.
+              </p>
+              <span class="price">$45</span>
+              <button class="enrollBtn">Enroll</button>
+            </div>
+
+            <div class="program-card">
+              <h3>Strength & Powerlifting Plan</h3>
+              <p>
+                Focus on heavy compound lifts to build raw strength and explosive power.
+              </p>
+              <span class="price">$50</span>
+              <button class="enrollBtn">Enroll</button>
+            </div>
+
+            <div class="program-card">
+              <h3>Push-Pull-Legs Split</h3>
+              <p>
+                A balanced 6-day routine splitting workouts by push, pull, and leg groups.
+              </p>
+              <span class="price">$40</span>
+              <button class="enrollBtn">Enroll</button>
+            </div>
+
+            <div class="program-card">
+              <h3>Cutting & Shredding Routine</h3>
+              <p>
+                Maintain muscle mass while reducing fat with smart weight training and cardio.
+              </p>
+              <span class="price">$30</span>
+              <button class="enrollBtn">Enroll</button>
+            </div>
+
+            <div class="program-card">
+              <h3>Advanced Body Sculpting</h3>
+              <p>
+                Intense program with supersets and isolation moves to refine and shape muscles.
+              </p>
+              <span class="price">$55</span>
+              <button class="enrollBtn">Enroll</button>
+            </div>
+
+          </div>
+        </div>
       </section>
     </div>
 
     <div>
       <!-- Counseling Section -->
-      <section class="content" id="counseling">
-        <h2>Counseling</h2>
-        <p>
-          Our certified counselors are here to support your health journey —
-          physically and emotionally.
-        </p>
+      <section class="counseling" id="counseling">
+        <div class="content-wrapper">
+          <h2>Counseling Packages</h2>
+          <p>
+            Our certified counselors are here to support your health journey physically and emotionally. Choose a package that fits your lifestyle.
+          </p>
+
+          <div class="counseling-wrapper">
+
+            <div class="counseling-card">
+              <h3>Basic Fitness Counseling for Beginner</h3>
+              <p>
+                One-time session to set short-term fitness goals and track your starting point.
+              </p>
+              <span class="price">$20</span>
+              <button class="enrollBtn">Book Now</button>
+            </div>
+
+            <div class="counseling-card">
+              <h3>Nutrition Guidance Package</h3>
+              <p>
+                Personalized diet plan with a follow-up session to balance training and nutrition.
+              </p>
+              <span class="price">$35</span>
+              <button class="enrollBtn">Book Now</button>
+            </div>
+
+            <div class="counseling-card">
+              <h3>Mental Wellness Coaching</h3>
+              <p>
+                Stress management and motivation strategies to keep your fitness journey on track.
+              </p>
+              <span class="price">$30</span>
+              <button class="enrollBtn">Book Now</button>
+            </div>
+
+            <div class="counseling-card">
+              <h3>Yoga for Life Stress Balance Package</h3>
+              <p>
+                Four guided yoga sessions focused on flexibility, mindfulness, and stress relief.
+              </p>
+              <span class="price">$60</span>
+              <button class="enrollBtn">Join Now</button>
+            </div>
+            <!-- <div class="counseling-card">
+              <h3>Premium Transformation Counseling</h3>
+              <p>
+                8-week plan combining fitness, nutrition, and mindset coaching for lasting results.
+              </p>
+              <span class="price">$120</span>
+              <button class="enrollBtn">Book Now</button>
+            </div>
+
+            <div class="counseling-card">
+              <h3>Couples / Friends Package</h3>
+              <p>
+                Train and grow together with joint counseling sessions tailored for two people.
+              </p>
+              <span class="price">$70</span>
+              <button class="enrollBtn">Book Now</button>
+            </div> -->
+
+          </div>
+        </div>
       </section>
     </div>
 
     <div>
-      <!-- Inquiries Section -->
-      <section class="content" id="inquiry">
-        <h2>Inquiries</h2>
-        <p>
-          Have a question? Reach out to us and we’ll guide you every step of the
-          way.
-        </p>
-      </section>
+     <!-- Inquiries Section -->
+    <section class="inquiry" id="inquiry">
+      <div class="inquiry-container">
+        <div class="inquiry-form">
+          <h2>Fitness Client Intake Form</h2>
+
+          <form id="client-form" novalidate>
+            <!-- Name -->
+            <div class="form-label">
+              <label>Client Name</label>
+            </div>
+            <div class="name-row">
+              <div class="field-wrapper">
+              <input type="text" id="first-name" placeholder="First Name" />
+              <label class="error" id="first-name-error"></label>
+            </div>
+            <div class="field-wrapper">
+              <input type="text" id="last-name" placeholder="Last Name" />
+              <label class="error" id="last-name-error"></label>
+            </div>
+            </div>
+
+            <!-- Email & Phone -->
+             <div class="form-label" style="margin-top: 10px;">
+            <label>Client Email</label>
+             </div>
+
+            <div class="field-wrapper">
+              <input type="email" id="email" placeholder="Email" />
+              <label class="error" id="email-error"></label>
+            </div>
+
+            <div class="form-label" style="margin-top: 10px;">
+            <label>Client Phone Number</label>
+             </div>
+            <div class="field-wrapper">
+              <input type="tel" id="phone" placeholder="Phone" />
+              <label class="error" id="phone-error"></label>
+            </div>
+
+            <!-- DOB -->
+             <div class="form-label" style="margin-top: 10px;">
+            <label>Client Date of Birth</label>
+             </div>
+
+            <div class="field-wrapper">
+              <input type="date" id="dob" />
+              <label class="error" id="dob-error"></label>
+            </div>
+
+            <!-- Inquiry -->
+                 <div class="form-label" style="margin-top: 10px;">
+            <label>Client Inquiry Details</label>
+             </div>
+
+            <div class="field-wrapper">
+              <textarea id="inquiry-details" placeholder="Type here"></textarea>
+              <label class="error" style="margin-top: 30px;" id="inquiry-details-error"></label>
+            </div>
+
+            <button id="submit-btn" type="submit">Submit</button>
+          </form>
+        </div>
+  </div>
+</section>
+
     </div>
 
     <div>
-      <!-- Blogs Section -->
-      <section class="content" id="blogs">
-        <h2>Blogs</h2>
-        <p>
-          Read expert tips, member stories, and wellness articles to keep you
-          inspired.
-        </p>
-      </section>
+      <!-- Blog Post Section -->
+        <section class="blogs" id="blogs">
+        <div class="blog-container">
+        <!-- Left Side Image -->
+        <div class="blog-image">
+        <img src="./css/assets/women3.jpg" alt="Blog Image" />
+        </div>
+
+        <!-- Right Side Content -->
+        <div class="blog-content">
+        <h3>5 Tips for a Healthy Lifestyle</h3>
+        <p>Discover practical tips and habits to improve your daily fitness and nutrition for long-term well-being.</p>
+        <span class="blog-date">August 20, 2025</span>
+        <a href="#" class="read-more">Read More...</a>
+        </div>
+        </div>
+
+        <!-- Add more blog cards -->
+        <div class="blog-container">
+        <div class="blog-image">
+        <img src="./css//assets//man1.jpg" alt="Blog Image" />
+        </div>
+        <div class="blog-content">
+        <h3>Best Home Workouts for Beginners</h3>
+        <p>Learn effective exercises you can do at home with minimal equipment and maximize results safely.</p>
+        <span class="blog-date">August 18, 2025</span>
+        <a href="#" class="read-more">Read More...</a>
+        </div>
+        </div>
+        </section>
+
     </div>
+
+    
 
     <!-- Footer -->
     <footer>&copy; 2025 FitZone Fitness Center. All rights reserved.</footer>
